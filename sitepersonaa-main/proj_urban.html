@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanGrow</title>
+  <link rel="stylesheet" href="proj_urban.css">
+</head>
+<body>
+  <header>
+    
+      <h1>Urbanow</h1><br>
+      <nav>
+        <ul>
+          <li><a href="#intro">Présentation</a></li>
+          <li><a href="#objectives">Objectifs</a></li>
+          <li><a href="#tech">Technologies</a></li>
+          <li><a href="#details">Détails du projet</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+          </ul>
+      </nav>
+    
+
+    <!-- Menu Déroulant -->
+    <div class="menu-container">
+        <button id="menu-button">Menu</button>
+        <nav class="menu-deroulant" id="dropdown-menu">
+          <ul class="menu-list">
+            <li class="menu-item"><a href="accueil.html" class="menu-link">Accueil</a></li>
+            <li class="menu-item"><a href="proj2.html" class="menu-link">CollaboratePlus</a></li>
+            <li class="menu-item"><a href="proj1.html" class="menu-link">TaskFlow</a></li>
+            <li class="menu-item"><a href="proj5.html" class="menu_link">Telsfla</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+
+  </header>
+  
+  <section id="intro">
+    <div id="presentation_2" class="container">
+      <br><h2>Présentation</h2>
+      <p>Face à l'urbanisation croissante et aux enjeux environnementaux, repenser notre alimentation est essentiel. L'agriculture urbaine, qui permet de cultiver localement en ville, est une solution innovante.</p>
+      <p><strong>Urbanow</strong> est une plateforme web pour gérer des fermes urbaines, permettant aux citadins d'optimiser leurs cultures avec des outils numériques simples et puissants. En tant que développeur web full-stack, j'ai créé cette plateforme qui intègre des données en temps réel via IoT et des algorithmes de machine learning pour rendre l'agriculture urbaine plus accessible et durable.</p>
+    </div>
+  </section>
+  
+  <section id="objectives">
+    <div id="objectives_2" class="container">
+      <h2>Objectifs du projet</h2>
+      <ul id="objectives_2">
+        <li>Suivi des conditions environnementales en temps réel avec des capteurs IoT.</li>
+        <li>Analyse des données et recommandations d'actions pour améliorer les rendements.</li>
+        <li>Gestion des plantations, irrigation et récoltes via une interface simple.</li>
+        <li>Vue d'ensemble des performances et statistiques des cultures.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="tech">
+    <div id="tech_2" class="container">
+      <h2>Technologies utilisées</h2>
+      <h3>Frontend :</h3>
+      <p>React, Redux, CSS Modules, D3.js</p>
+      <h3>Backend :</h3>
+      <p>Node.js, Express, MongoDB, Socket.io, Python (TensorFlow), IoT (Raspberry Pi, Arduino)</p>
+    </div>
+  </section>
+
+  <section id="details">
+    <div  id="details_2" class="container">
+      <h2>Détails du projet</h2>
+      <p><strong>Frontend : Interface utilisateur intuitive</strong></p>
+      <p>La première étape du projet consistait à créer une interface simple mais puissante pour permettre aux utilisateurs de suivre facilement l'état de leurs cultures et de prendre des décisions éclairées. Avec React et Redux, j'ai pu créer une interface réactive où les informations se mettent à jour en temps réel. Par exemple, lorsque les capteurs IoT détectent une variation de température ou d'humidité, les graphiques et les alertes sont instantanément mis à jour sur l'interface.</p>
+      <p>L'une des fonctionnalités phares est la visualisation des données. Grâce à D3.js, j'ai intégré des graphiques dynamiques permettant aux utilisateurs de suivre les évolutions de la température, de l'humidité et de la lumière tout au long de la journée. Ces graphiques ne sont pas seulement visuels, mais aussi interactifs : l'utilisateur peut cliquer sur chaque élément pour obtenir plus d'informations sur les conditions de culture et ajuster les paramètres d'irrigation, par exemple.</p>
+
+      <p><strong>Backend : Gestion des données en temps réel</strong></p>
+      <p>Côté backend, le principal défi était d’assurer que les données des capteurs IoT soient traitées et affichées en temps réel. J'ai utilisé Node.js pour son efficacité à gérer des connexions concurrentes et pour la facilité avec laquelle il s’intègre avec Socket.io, qui a permis d’établir une communication bidirectionnelle entre le frontend et le backend.</p>
+      <p>Les capteurs IoT, intégrés via des Raspberry Pi et Arduino, envoient des données régulièrement au serveur. Grâce à la base de données MongoDB, les informations sont stockées de manière flexible, ce qui permet d’archiver l’historique des données et d'effectuer des analyses sur le long terme.</p>
+      <p>J'ai également intégré un système de machine learning en Python, via l'API TensorFlow. Ce système analyse les données environnementales pour proposer des recommandations intelligentes sur les cultures. Par exemple, si la plateforme détecte que la température est trop basse pour une culture spécifique, elle recommande d’ajuster les paramètres d’irrigation ou d’activer un système de chauffage. Ces recommandations sont constamment mises à jour grâce aux données en temps réel fournies par les capteurs.</p>
+
+      <p><strong>Sécurité et Scalabilité</strong></p>
+      <p>Pour garantir la sécurité des données utilisateurs, j’ai utilisé OAuth2 pour l’authentification, permettant aux utilisateurs de se connecter en toute sécurité. De plus, le système utilise JWT (JSON Web Tokens) pour maintenir les sessions actives de manière sécurisée.</p>
+      <p>Concernant la scalabilité, j’ai veillé à ce que l’architecture soit facilement extensible : la plateforme est prête à supporter une augmentation significative du nombre d’utilisateurs et des capteurs IoT grâce à la modularité de MongoDB et la capacité de Node.js à gérer des charges élevées.</p>
+    </div>
+  </section>
+
+  <section id="conclusion">
+    <div id="conclusion_2" class="container">
+      <h2>Conclusion</h2>
+      <p>Le projet <strong>UrbanGrow</strong> représente bien plus qu'une simple plateforme de gestion de fermes urbaines. Il s'agit d'une réflexion profonde sur l'intégration des technologies modernes dans des projets concrets, avec une ambition de transformer la manière dont nous interagissons avec notre environnement urbain. Ce projet m'a permis d'explorer et de mettre en pratique mes compétences en tant que développeur web full-stack, tout en combinant des technologies IoT, des algorithmes de machine learning, et une architecture web scalable.</p>
+      <p>Dans un monde où l'agriculture durable devient une priorité, UrbanGrow offre une solution innovante et intelligente pour faciliter l'adoption de l'agriculture urbaine. Ce projet est un véritable exemple de la manière dont la technologie peut être utilisée pour améliorer notre quotidien et répondre aux défis écologiques de demain.</p>
+      <p>En créant cette plateforme, j'ai non seulement approfondi mes connaissances techniques, mais aussi participé à un projet qui pourrait, à terme, avoir un impact réel sur la manière dont les villes produisent et consomment leur nourriture.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Urbanow, l’application dédiée aux agriculteurs</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow, l'outil de collaboration efficace.</title>
+  <link rel="stylesheet" href="proj1.css">
+</head>
+<body>
+  <header>
+    <h1>TaskFlow, l'outil de collaboration efficace.</h1>
+    <nav>
+      <ul>
+        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#etapes">Étapes de Développement</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Menu Déroulant -->
+    <div class="menu-container">
+      <button id="menu-button">Menu</button>
+      <nav class="menu-deroulant" id="dropdown-menu">
+        <ul class="menu-list">
+          <li class="menu-item"><a href="accueil.html" class="menu-link">Accueil</a></li>
+          <li class="menu-item"><a href="proj_urban.html" class="menu-link">Urbanow</a></li>
+          <li class="menu-item"><a href="proj1.html" class="menu-link">TaskFlow</a></li>
+          <li class="menu-item"><a href="proj5.html" class="menu_link">Telsfla</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section id="fonctionnalites">
+      <h2>Fonctionnalités Clés</h2>
+      <article class="feature-block">
+        <h3>Gestion de tâches</h3>
+        <ul>
+          <li>Créer, modifier et supprimer des tâches.</li>
+          <li>Attribuer des tâches à des membres d'équipe.</li>
+          <li>Définir des priorités et des deadlines.</li>
+          <li>Regrouper les tâches en catégories (projets, sprints, etc.).</li>
+        </ul>
+      </article>
+      <article class="feature-block">
+        <h3>Tableaux de type Kanban</h3>
+        <ul>
+          <li>Visualiser les tâches dans un tableau Kanban interactif.</li>
+          <li>Déplacer les tâches entre les colonnes (à faire, en cours, terminé).</li>
+        </ul>
+      </article>
+      <article class="feature-block">
+        <h3>Notifications et rappels</h3>
+        <ul>
+          <li>Recevoir des notifications pour les échéances imminentes.</li>
+          <li>Alertes en temps réel pour les nouvelles affectations ou modifications.</li>
+        </ul>
+      </article>
+      <article class="feature-block">
+        <h3>Messagerie intégrée</h3>
+        <ul>
+          <li>Chat en temps réel entre les membres d'équipe.</li>
+          <li>Discussion groupée par projet.</li>
+        </ul>
+      </article>
+      <article class="feature-block">
+        <h3>Statistiques et rapports</h3>
+        <ul>
+          <li>Suivi du temps passé sur les tâches.</li>
+          <li>Graphiques d’avancement pour chaque projet.</li>
+          <li>Exportation des rapports en PDF ou Excel.</li>
+        </ul>
+      </article>
+      <article class="feature-block">
+        <h3>Gestion des utilisateurs</h3>
+        <ul>
+          <li>Authentification sécurisée (OAuth ou JWT).</li>
+          <li>Rôles et permissions (admin, membre, lecteur).</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="technologies">
+      <h2>Technologies Utilisées</h2>
+      <article class="feature-block">
+        <ul>
+          <li><strong>Frontend :</strong> React, Tailwind CSS ou Bootstrap</li>
+          <li><strong>Backend :</strong> Node.js avec Express, WebSocket (Socket.IO)</li>
+          <li><strong>Base de Données :</strong> MongoDB, Redis</li>
+          <li><strong>Outils et intégrations :</strong> Docker, GitHub Actions, Stripe API</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="etapes">
+      <h2>Étapes de Développement</h2>
+      <article class="feature-block">
+        <h3>Phase 1 : Conception</h3>
+        <ul>
+          <li>Définir les besoins fonctionnels et non fonctionnels.</li>
+          <li>Créer une maquette UI/UX sur Figma ou Adobe XD.</li>
+          <li>Définir les modèles de données pour MongoDB.</li>
+        </ul>
+      </article>
+      <article class="feature-block">
+        <h3>Phase 2 : Développement Backend</h3>
+        <ul>
+          <li>Créer des APIs REST pour la gestion des tâches, des projets et des utilisateurs.</li>
+          <li>Implémenter une authentification sécurisée.</li>
+          <li>Configurer WebSocket pour la messagerie.</li>
+        </ul>
+      </article>
+      <article class="feature-block">
+        <h3>Phase 3 : Développement Frontend</h3>
+        <ul>
+          <li>Intégrer les APIs au frontend avec React.</li>
+          <li>Implémenter l'interface utilisateur pour le tableau Kanban.</li>
+          <li>Ajouter les notifications dynamiques.</li>
+        </ul>
+      </article>
+      <article class="feature-block">
+        <h3>Phase 4 : Tests</h3>
+        <ul>
+          <li>Tester les fonctionnalités clés (unitaires et intégrations).</li>
+          <li>Simuler des charges utilisateur pour vérifier les performances.</li>
+        </ul>
+      </article>
+      <article class="feature-block">
+        <h3>Phase 5 : Déploiement</h3>
+        <ul>
+          <li>Déployer l'application avec Docker sur AWS, Azure ou Heroku.</li>
+          <li>Configurer un certificat SSL et un domaine personnalisé.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 TaskFlow. Tous droits réservés.</p>
+  </footer>
+
+  <script src="proj1.js"></script>
+</body>
+</html>

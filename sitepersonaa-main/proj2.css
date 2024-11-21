@@ -1,0 +1,219 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.openart.ai/uploads/image_dtFN8W1y_1732110758390_raw.jpg') no-repeat center center fixed; /* Ajouter une image de fond */
+    background-size: cover; /* Faire en sorte que l'image couvre toute la surface de la page */
+    color: #000000;
+  }
+  
+  /* En-tête avec fond */
+  header {
+    background: rgba(143, 132, 132, 0.5); /* Couche semi-transparente pour améliorer la lisibilité du texte */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Menu principal */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6f61; /* Animation de couleur */
+  }
+  
+  /* Menu déroulant */
+  .menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #menu-button {
+    background-color: #444444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;  
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #menu-button:hover {
+    background-color: #333;
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+  }
+  
+  .menu-deroulant {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .menu-container:hover .menu-deroulant {
+    display: block;
+    opacity: 1;
+  }
+  
+  .menu-deroulant ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    margin: 0 10px;
+  }
+  
+  .menu-link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-link:hover {
+    background: #444;
+    color: #ff6f61; /* Changement de couleur */
+  }
+  
+  /* Animations pour les blocs de contenu */
+  .feature-block {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .feature-block:hover {
+    transform: translateY(-5px); /* Animation au survol */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .feature-block:nth-child(odd) {
+    animation-delay: 0.2s;
+  }
+  
+  .feature-block:nth-child(even) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Section principale */
+  main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Couleur de fond semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    color: #000214;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  footer {
+    background: #444444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  /* Media Queries pour le responsive */
+  @media screen and (max-width: 768px) {
+    /* Pour les petits écrans */
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .menu-container {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  
+    .menu-deroulant {
+      width: 100%;
+      left: 0;
+    }
+  
+    main {
+      padding: 10px;
+      max-width: 100%;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Pour les très petits écrans */
+    header h1 {
+      font-size: 1.2rem;
+    }
+  
+    .menu-link {
+      font-size: 14px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  }

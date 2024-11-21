@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: white;
+  margin: 0;
+  height: 100%;
+  background-image: url('fond3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 100px; /* Un peu de marge en haut pour ne pas que le menu soit trop proche du bord */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: linear-gradient(45deg, #444444, whitesmoke);
+  padding: 20px 0;
+  height: 200px;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0;
+}
+
+/* Menu déroulant */
+.menu-container {
+  position: relative; /* Fixe le bouton de menu dans la fenêtre */
+  top: 20px; /* Ajuster la distance par rapport au haut de la fenêtre */
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(-50%); /* Centrer le bouton par rapport à son propre width */
+  z-index: 1000;
+}
+
+#menu-button {
+  background-color: #444444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#menu-button:hover {
+  background-color: #333;
+  transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+.menu-deroulant {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  display: none;
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu-container:hover .menu-deroulant {
+  display: block;
+  opacity: 1;
+}
+
+.menu-deroulant ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 0 10px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-link:hover {
+  background: #444;
+  color: #ff6f61; /* Changement de couleur */
+}
+
+/* Navigation principale */
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: #ff6f61; /* Animation de couleur */
+}
+
+/* Sections */
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section p {
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(45deg, #444444, whitesmoke);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Conteneurs de sections */
+#conclusion_2, #presentation_2, #objectives_2, #details_2, #tech_2 {
+  padding: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+}
+
+/* Bouton menu */
+.bouton {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.bouton_lien {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+}
+
+.bouton_lien li {
+  text-align: left;
+}
+
+.bouton_lien li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.bouton_lien li a:hover {
+  background-color: #f4f4f4;
+}
+
+.bouton:hover .bouton_lien {
+  display: block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+  }
+
+  section p {
+    font-size: 1em;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .dropbtn {
+    font-size: 1.1em;
+  }
+
+  .bouton_lien {
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    font-size: 1.2em;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  section h2 {
+    font-size: 1.9em;
+  }
+
+  section p {
+    font-size: 1.1em;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  .dropbtn {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1025px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    font-size: 1.3em;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  section h2 {
+    font-size: 2em;
+  }
+
+  section p {
+    font-size: 1.2em;
+  }
+
+  .container {
+    width: 80%;
+  }
+}
